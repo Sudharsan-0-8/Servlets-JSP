@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>FirstWebProject</display-name>
+  
+  
+  <servlet>
+      
+  	<servlet-name>abc</servlet-name>
+  	<servlet-class>com.basics1.AdditionServlet</servlet-class>
+  	
+  	<init-param>
+  		<param-name>a</param-name>
+  		<param-value>666</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>b</param-name>
+  		<param-value>1</param-value>
+  	</init-param>
+  	
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>abc</servlet-name>
+  	<url-pattern>/addAction</url-pattern>
+  </servlet-mapping>
+
+  <!-- 
+  <servlet>
+  	<servlet-name>abc3</servlet-name>
+  	<servlet-class>com.basics1.MultiplicationServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>abc3</servlet-name>
+  	<url-pattern>/productAction</url-pattern>
+  </servlet-mapping> -->
+  
+  
+  <servlet>
+  	<servlet-name>abc2</servlet-name>
+  	<servlet-class>com.basics1.SubractionServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>abc2</servlet-name>
+  	<url-pattern>/subractAction</url-pattern>
+  </servlet-mapping>
+  
+  <context-param>
+  	<param-name>a</param-name>
+  	<param-value>555</param-value>
+  </context-param>
+  
+  <context-param>
+	<param-name>b</param-name>
+	<param-value>1</param-value>
+  </context-param>
+  
+</web-app>
